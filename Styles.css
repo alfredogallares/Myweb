@@ -1,0 +1,716 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    position: relative;
+    background: #1F2833;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 90%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+}
+
+.logo {
+    position: relative;
+    position: absolute;
+    left: 30px;
+    font-size: 30px;
+    color: #D86027;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.logo:hover {
+    color: white;
+}
+
+
+.navbar a {
+    position: relative;
+    left: 50%;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 60px;
+    transition: .3s;
+}
+
+
+
+.home {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.home .pic0 {
+    position: relative;
+    position: absolute;
+    left: 60%;
+    top: 3%;
+    height: 840px;
+    
+}
+
+
+.navbar a:hover,
+.navbar a:hover {
+    color: #D86027;
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.home-content h1 {
+    position: relative;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+}
+
+
+.home-content  span {
+    color: #D86027;
+}
+
+.home-content h3 {
+    position: relative;
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 5%;
+}
+
+
+
+
+.home-content h2 {
+    position: relative;
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    position: absolute;
+    top: 48%;
+    left: 5%;
+}
+
+
+.home-content .btn-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+    position: absolute;
+    top: 65%;
+    left: 5%;
+}
+
+
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #D86027;
+    border: 2px solid #D86027;
+    border-radius: 8px;
+    font-size: 19px;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+
+.btn-box a:hover {
+    color: #D86027;
+}
+
+.btn-box a:nth-child(1) {
+    background: transparent;
+    color: #D86027;
+}
+
+.btn-box a:nth-child(1):hover {
+    color: #1F2833;
+}
+
+.btn-box a:nth-child(1)::before{
+    background: #D86027;
+}
+
+
+.btn-box a:hover::before{
+    width: 100%;
+}
+
+.home-sci{
+    position: relative;
+    position: absolute;
+    top: 80%;
+    left: 5%;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #D86027;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #D86027;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+} 
+
+.home-sci a:hover {
+    color: #1F2833;
+
+}
+.home-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #D86027;
+    z-index: -1;
+    transition: .5s;
+}
+
+.home-sci a:hover::before {
+    width: 100%;
+}
+
+
+
+.home-imgHover:hover {
+    background: #1F2833;
+    opacity: .8;
+}
+
+
+
+/* KEYFRAME ANIMATION */
+@keyframes showRight {
+    100% {
+        width: 0;
+    }
+}
+@keyframes manipActiveHover {
+    100% {
+        pointer-events: auto;
+    }
+}
+
+
+
+.info h2{
+    position: absolute;
+    top: 170px;
+    left: 3%;
+    font-size: 40px;
+    font-weight: bold;
+    color: #D86027;
+}
+.info h2:hover{
+   color: white;
+}
+
+
+
+.info p{
+    position: absolute;
+    top: 250px;
+    left: 3%;
+    font-size: 30px;
+    color: white; 
+}
+
+
+.Myinfo h2{
+    position: absolute;
+    top: 455px;
+    left: 3%;
+    font-size: 40px;
+    font-weight: bold;
+    color: #D86027;
+
+}
+.Myinfo h2:hover{
+    color: white;
+ }
+
+
+.Myinfo p {
+    position: absolute;
+    top: 530px;
+    left: 3%;
+    font-size: 30px;
+    color: white;
+}
+
+
+
+.info2 h2{
+    position: absolute;
+    top: 630px;
+    left: 3%;
+    font-size: 40px;
+    font-weight: bold;
+    color: #D86027;
+}
+.info2 h2:hover{
+    color: white;
+ }
+
+.info2 p{
+    position: absolute;
+    top: 700px;
+    left: 3%;
+    font-size: 30px;
+    color: white;
+}
+
+
+ 
+.picture .pic1{
+    display: flex;
+    width: 600px;
+    height: 370px;
+    position: absolute;
+    left: 50%;
+    top: 70px;
+    border-radius: 5px;
+
+}
+
+ 
+.picture .pic1:hover {
+    transform: scale(1.1);
+}
+
+.Video .vid {
+    width: 600px;
+    height: 370px;
+    position: absolute;
+    left: 50%;
+    top: 480px;
+}
+
+.education h1 {
+    position: absolute;
+    top: 170px;
+    left: 2%;
+    font-size: 35px;
+    color: #D86027; 
+}
+
+.education h1:hover{
+    color: white;
+}
+
+
+
+.education p {
+    position: absolute;
+    top: 250px;
+    left: 10px;
+    font-size: 25px;
+    color: white; 
+}
+
+.educations h1 {
+    position: absolute;
+    top: 520px;
+    left: 2%;
+    font-size: 35px;
+    color: #D86027; 
+    height: 40px;
+}
+
+.educations h1:hover {
+    color: white;
+}
+
+
+.educations p {
+    position: absolute;
+    top: 600px;
+    left: 10px;
+    font-size: 25px;
+    color: white; 
+}
+
+
+.Myheader h1 {
+    color: #D86027;
+    font-size: 50px;
+    position: absolute;
+    text-align: justify;
+    top: 140px;
+    left: 28%;
+}
+
+
+
+.Myheader h1:hover {
+    color: #ededed;
+}
+
+.Myheader p {
+    position: relative;
+    color: white;
+    font-size: 35px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 250px;
+    left: 2%;
+}
+
+
+
+
+.soft h1 {
+    position: relative;
+    color: #D86027;
+    font-size: 50px;
+    position: absolute;
+    top: 400px;
+    left: 10%;
+}
+
+
+.soft h1:hover {
+    color: white;
+}
+
+.soft .Teamwork {
+    position: relative;
+    color: white;
+    font-size: 35px;
+    position: absolute;
+    top: 500px;
+    left: 10%;
+}
+
+
+.soft .Teamwork:hover{
+    color: #D86027;
+    transform: scale(1.1);
+}
+
+.soft .Communication {
+    position: relative;
+    color: white;
+    font-size: 35px;
+    position: absolute;
+    top: 560px;
+    left: 10%;
+}
+
+.soft .Communication:hover{
+    color: #D86027;
+    transform: scale(1.1);
+}
+
+.soft .Self-confidence {
+    position: relative;
+    color: white;
+    font-size: 35px;
+    position: absolute;
+    top: 620px;
+    left: 10%;
+}
+
+.technicalSkills h1 {
+    position: relative;
+    color: #D86027;
+    font-size: 50px;
+    position: absolute;
+    top: 400px;
+    left: 60%;
+}
+
+.technicalSkills h1:hover{
+    color: white;
+}
+
+.technicalSkills p {
+    position: relative;
+    color: white;
+    font-size: 35px;
+    position: absolute;
+    top: 500px;
+    left: 60%;
+}
+
+
+
+.technicalSkills p:hover{
+    color: #D86027;
+}
+
+.official h1{
+    position: absolute;
+    top: 120px;
+    left: 340px;
+}
+
+.hobbies {
+    text-align: center;
+}
+
+.hobbies h1 {
+    color: #D86027;
+    font-size: 70px;
+    position: absolute;
+    top: 200px;
+    left: 43%;
+}
+
+.hobbies h1:hover {
+    transform: scale(1.1);
+}
+
+.hobbies p{
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 350px;
+}
+
+
+
+
+.Myimages {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    height: 500px;
+    position: absolute;
+    top: 200px;
+    left: 100px;
+}
+.official h1 {
+    display: flex;
+    font-size: 40px;
+    color: #D86027;
+    position: absolute;
+    left: 15%;
+
+}
+.official h1:hover {
+    transform: scale(1.1);
+    color: white;
+}
+
+
+.official h2 {
+    display: flex;
+    font-size: 40px;
+    color: #D86027;
+    position: absolute;
+    left: 40%;
+    top: 120px;
+
+}
+.official h2:hover {
+    transform: scale(1.1);
+    color: white;
+}
+
+
+
+.official h3 {
+    display: flex;
+    font-size: 40px;
+    color: #D86027;
+    position: absolute;
+    left: 75%;
+    top: 120px;
+
+}
+
+.official h3:hover {
+    transform: scale(1.1);
+    color: white;
+}
+.Contact h3{ 
+    position: absolute;
+    top: 160px;
+    left: 41%;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+
+.Contact h3:hover{
+    color: #D86027;
+    transform: scale(1.1);
+}
+
+.Mycontainer {
+    border-radius: 5px;
+    background-color: white;
+    padding: 20px;
+    position: absolute;
+    top: 350px;
+    left:24%;
+}
+  
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #1F2833;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #D86027;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #1F2833;
+}
+
+
+.wrapper {
+    display: inline-flex;
+    list-style: none;
+    height: 120px;
+    width: 100%;
+    padding-top: 40px;
+    font-family: "Poppins", sans-serif;
+    justify-content: center;
+    position: absolute;
+    top: 175%;
+    right: 1%;
+  }
+  
+  .wrapper .icon {
+    position: relative;
+    background: #fff;
+    border-radius: 50%;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #fff;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #081b29;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  
+  .wrapper .icon:hover span,
+  .wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  .wrapper .facebook:hover,
+  .wrapper .facebook:hover .tooltip,
+  .wrapper .facebook:hover .tooltip::before {
+    background: #D86027;
+    color: white;
+  }
+  
+  .wrapper .twitter:hover,
+  .wrapper .twitter:hover .tooltip,
+  .wrapper .twitter:hover .tooltip::before {
+    background: #D86027;
+    color: white;
+  }
+  
+  .wrapper .instagram:hover,
+  .wrapper .instagram:hover .tooltip,
+  .wrapper .instagram:hover .tooltip::before {
+    background: #D86027;
+    color: white;
+  }
+  
